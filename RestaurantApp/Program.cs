@@ -18,6 +18,10 @@ namespace RestaurantApp
     new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
     new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7)
 };
+foreach (var item in restaurants)
+            {
+                Console.WriteLine($"{item.Id}. {item.Name}. ({item.Category}) -Reting: {item.Rating}");
+            }
 
         }
     }
