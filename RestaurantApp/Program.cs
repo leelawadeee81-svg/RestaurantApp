@@ -24,7 +24,10 @@ foreach (var item in restaurants)
             {
                 Console.WriteLine($"{item.Id}. {item.Name}. ({item.Category}) -Reting: {item.Rating}");
             }
-
+            var amount = restaurants.Count();
+            var avg = restaurants.Average(x => x.Rating);
+            Console.WriteLine($"Total is {amount}");
+            Console.WriteLine($"Average is {avg}");
         }
     }
     public class Restaurant
